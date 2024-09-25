@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofadi+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 115%; /* Full viewport height */
+    width: 100%;
+    background-color: #f0f0f5; /* Light background for contrast */
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 77%;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.left {
+    margin-top: -40px;
+    position: relative;
+    width: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-container{
+    position: relative;
+    width: 100%; /* adjust as per the mobile frame size */
+    height: 550px;
+}
+
+.mobile-frame{
+    position: absolute;
+    width: 100%;
+    /* height: auto; */
+}
+
+.back-mobile{
+    z-index: 1;
+    /* left: -61px; */
+
+}
+
+.front-mobile{
+    z-index: 2;
+}
+
+.mbl1{
+    width: 100%;
+    height: auto;
+}
+
+.img1{
+    position: absolute;
+    width: 63%;
+    height: 93.1%;
+    top: 4%;
+    left: 19%;
+    z-index: -2;
+    
+}
+
+.insta-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6%;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    max-width: 330px; /* Max width for the form */
+    height: 550px;
+    width: 100%; /* Take full width inside the container */
+}
+
+.login {
+    background-color: #fff; /* White background for the form */
+    padding: 20px; /* Add padding for spacing */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow to lift the container */
+    border-radius: 12px; /* Rounded corners for a modern look */
+    width: 100%;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form h1{
+    padding: 15px;
+    font-size: 2rem;
+    font-family: "Bitter", serif;
+    text-align: center;
+    color: #262626;
+}
+
+input{
+    padding: 10px;
+    font-size: 0.8rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(180, 178, 178, 0.151);
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+input:focus{
+    border-color: rgb(216, 207, 207);
+    outline: none;
+}
+
+button{
+    margin-top: 10px;
+    padding: 7px ;
+    background-color: rgb(62, 126, 236);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: blue;
+}
+
+.divide-part{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.divide-part hr{
+    flex: 1;
+}
+
+.divide-part p{
+    margin: 0;
+    font-size: 1rem;
+}
+
+
+.second-login-option{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.second-login-option a{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 400;
+
+}
+
+a:hover{
+    color: rgb(94, 0, 152);
+}
+
+.second-login-option :nth-child(2){
+    color: #6672b1;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.sign-up{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: #fff; /* White background for the form */
+    padding: 24px; /* Add padding for spacing */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow to lift the container */
+    border-radius: 12px; /* Rounded corners for a modern look */
+    width: 100%;
+}
+
+.sign-up a{
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 600;
+    color: rgb(35, 96, 201);
+}
+
+.last-part{
+    text-align: center;
+    margin: 18px;
+    font-size: 1rem;
+}
+
+.get-button{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+
+}
+
+.app-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 12px;
+    width: 100%;
+    gap: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+.app-button p{
+    color: white;
+    font-size: 0.66rem;
+    letter-spacing: 1.2px;
+}
+.app-button img{
+    width: 33px;
+    height: 33px;
+}
+
+.app-button span{
+    font-size: 1.3rem;
+}
+
+.google-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 12px;
+    width: 100%;
+    gap: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.google-button p{
+    color: white;
+    font-size: 0.66rem;
+    letter-spacing: 1.4px;
+}
+
+.google-button img{
+    width: 25px;
+    height: 25px;
+}
+
+.google-button span{
+    font-size: 1.15rem;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footer-content p{
+    color: #595858;
+}
+
+.footer-content p:nth-child(1){
+    word-spacing: 15px;
+}
+.footer-content p:nth-child(2){
+    word-spacing: 15px;
+}
+
+
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+
+
+    .body,html{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%; /* Full viewport height */
+        width: 100%;
+    }
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+        height: auto; /* Allow height to adjust based on content */
+        padding: 20px; /* Add padding for better spacing */
+    }
+
+    .left {
+        display: none; /* Hide the left container */
+    }
+
+    .right {
+        width: 100%; /* Full width for the login form */
+        max-width: 400px; /* Adjust max width as needed */
+        padding: 20px; /* Add padding for spacing */
+    }
+
+    .get-button {
+        display: flex;
+        align-items: center; /* Center align buttons */
+        gap: 10px; /* Space between buttons */
+        
+    }
+
+    
+    .google-button {
+        width: 70%; /* Reduce width of buttons */
+        padding: 8px; /* Smaller padding */
+        font-size: 0.8rem; /* Smaller font size */
+    }
+
+    .app-button{
+        width: 70%; /* Reduce width of buttons */
+        padding: 8px; /* Smaller padding */
+        font-size: 0.8rem;
+    }
+
+    .app-button p{
+        font-size: 0.5rem;
+        letter-spacing: 1px;
+    }
+
+    .app-button span{
+        font-size: 0.9rem;
+    }
+
+    .app-button img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    
+    .google-button p{
+        font-size: 0.5rem;
+    letter-spacing: 1px;
+    }
+
+    .google-button img{
+        width: 20px;
+        height: 20px;
+    }
+
+    
+    .google-button span{
+        font-size: 0.8rem;
+    }
+
+    .footer-content {
+        text-align: center; /* Center the footer content */
+        padding: 10px; /* Add padding for spacing */
+        width: 100%; /* Ensure footer takes full width */
+        margin-top: 30px; /* Add margin to push it below other content */
+    }
+    .footer-content p{
+        font-size: 0.7rem;
+        /* word-spacing: 5px; */
+    }
+}
+
+
