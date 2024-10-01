@@ -20,3 +20,4 @@ The project contains the following files and folders:
 
 ## View the Project
 
+https://codieys.github.io/InstaClone/
